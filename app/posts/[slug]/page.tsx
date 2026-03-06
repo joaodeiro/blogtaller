@@ -1,12 +1,12 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { PortableText } from "@portabletext/react";
 import { ArrowLeft } from "lucide-react";
 
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Badge } from "@/components/ui/badge";
+import { PortableText } from "@/components/portable-text";
 import { getPost, getPosts, urlFor } from "@/lib/sanity";
 
 export const revalidate = 60;
