@@ -1,6 +1,7 @@
-import { PortableText as PortableTextComponent, PortableTextReactComponents } from "@portabletext/react";
+import { PortableText as PortableTextComponent } from "@portabletext/react";
+import type { PortableTextReactComponents } from "@portabletext/react";
 
-const portableTextComponents: PortableTextReactComponents = {
+const portableTextComponents: Partial<PortableTextReactComponents> = {
   block: {
     normal: ({ children }) => <p className="mb-4 leading-relaxed">{children}</p>,
     h1: ({ children }) => <h1 className="text-3xl font-bold mb-6 mt-8">{children}</h1>,
